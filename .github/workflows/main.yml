@@ -32,7 +32,7 @@ jobs:
         ECR_REPOSITORY: soham-assignment1
         IMAGE_TAG: v0.1
       run: |
-        cd clo835_summer2023_assignment1/
+        cd clo835_fall2022_assignment1/
         ls -ltra
         # Build and push image for mysql db
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:db_$IMAGE_TAG -f Dockerfile_mysql .
